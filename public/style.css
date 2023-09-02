@@ -11,3 +11,9 @@ body {
   
 /* Enter your styling here */
 
+button {
+  height: 75px;
+  width: 75px;
+  padding: 50px;
+  background-color: aqua;
+}
