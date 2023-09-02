@@ -20,14 +20,12 @@ h1 {
   display: flex;
   justify-content: center;
   margin: 35px;
+  flex-wrap: wrap;
 }
 .row{
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-basis: 100%;
-}
-.break{
   flex-basis: 100%;
 }
 .btn {
@@ -57,7 +55,7 @@ h1 {
   max-width: 200px;
   background-color: rgb(224, 224, 224);
   text-align: center;
-  
+  marg
 }
 
 #reset{
