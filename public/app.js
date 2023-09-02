@@ -78,7 +78,8 @@ function chnchance() {
 }
 function func1() {
     if(cells[0] == "") {
-        document.getElementById("btn1").className += "btndis";
+        document.getElementById("btn1").classList.add("btndis");
+        document.getElementById("btn1").value = chance;
         cells[0] = chance;
         ticTacToe(chance, 0);
         chnchance();
@@ -86,6 +87,8 @@ function func1() {
 }
 function func2() {
     if(cells[1] == "") {
+        document.getElementById("btn2").classList.add("btndis");
+        document.getElementById("btn2").value = chance;
         cells[1] = chance;
         ticTacToe(chance, 1);
         chnchance();
@@ -93,6 +96,8 @@ function func2() {
 }
 function func3() {
     if(cells[2] == "") {
+        document.getElementById("btn3").classList.add("btndis");
+        document.getElementById("btn3").value = chance;
         cells[2] = chance;
         ticTacToe(chance, 2);
         chnchance();
@@ -100,6 +105,8 @@ function func3() {
 }
 function func4() {
     if(cells[3] == "") {
+        document.getElementById("btn4").classList.add("btndis");
+        document.getElementById("btn4").value = chance;
         cells[3] = chance;
         ticTacToe(chance, 3);
         chnchance();
@@ -107,6 +114,8 @@ function func4() {
 }
 function func5() {
     if(cells[4] == "") {
+        document.getElementById("btn5").classList.add("btndis");
+        document.getElementById("btn5").value = chance;
         cells[4] = chance;
         ticTacToe(chance, 4);
         chnchance();
@@ -114,6 +123,8 @@ function func5() {
 }
 function func6() {
     if(cells[5] == "") {
+        document.getElementById("btn6").classList.add("btndis");
+        document.getElementById("btn6").value = chance;
         cells[5] = chance;
         ticTacToe(chance, 5);
         chnchance();
@@ -121,6 +132,8 @@ function func6() {
 }
 function func7() {
     if(cells[6] == "") {
+        document.getElementById("btn7").classList.add("btndis");
+        document.getElementById("btn7").value = chance;
         cells[6] = chance;
         ticTacToe(chance, 6);
         chnchance();
@@ -128,6 +141,8 @@ function func7() {
 }
 function func8() {
     if(cells[7] == "") {
+        document.getElementById("btn8").classList.add("btndis");
+        document.getElementById("btn8").value = chance;
         cells[7] = chance;
         ticTacToe(chance, 7);
         chnchance();
@@ -135,6 +150,8 @@ function func8() {
 }
 function func9() {
     if(cells[8] == "") {
+        document.getElementById("btn9").classList.add("btndis");
+        document.getElementById("btn9").value = chance;
         cells[8] = chance;
         ticTacToe(chance, 8);
         chnchance();
