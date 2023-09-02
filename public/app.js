@@ -19,7 +19,7 @@ let conditions = [
 
 // Function to handle player moves
 const ticTacToe = (element, index) => {
-    console.log(element);
+    //console.log(element);
     //console.log(index);
     //console.log(cells);
     for(const cond of conditions) {
@@ -60,6 +60,7 @@ const ticTacToe = (element, index) => {
 
 // Function to reset the game
 const resetGame = () => {
+    console.log("sd");
     // Your code to reset the game state
     // ...
 
@@ -76,7 +77,7 @@ function chnchance() {
         chance = "X";
     }
 }
-/*
+
 function func1() {
     if(cells[0] == "") {
         document.getElementById("btn1").classList.add("btndis");
@@ -158,9 +159,10 @@ function func9() {
         chnchance();
     }
 }
-*/
+/*
 btns.forEach((btn, i) => {
     btn.addEventListener('click', () => ticTacToe(btn, i));
 });
-
-document.querySelector('#reset').addEventListener('click', resetGame);
+*/
+document.getElementById("reset").innerText = "asdsad";
+//.addEventListener('click', resetGame());
