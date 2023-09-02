@@ -4,6 +4,7 @@ let currentPlayer = 'X';
 let result = document.querySelector('.result');
 let btns = document.querySelectorAll('.btn');
 let chance = "X";
+let i = 0;
 let conditions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -19,8 +20,10 @@ let conditions = [
 const ticTacToe = (element, index) => {
     console.log(element);
     console.log(index);
-    // Your game logic here
-
+    for(const cond of conditions) {
+        
+    }
+    
     /*
     **Part 1: Winning Conditions (Add your code here)**
 
@@ -59,15 +62,57 @@ const resetGame = () => {
     // Your code to re-enable buttons
     // ...
 };
-func
-function func1() {
-    ticTacToe(chance, 0);
-    cells[0] = chance;
+function chnchance() {
     if(chance == "X") {
         chance = "O";
     } else {
         chance = "X";
     }
+}
+function func1() {
+    ticTacToe(chance, 0);
+    cells[0] = chance;
+    chnchance();
+}
+function func2() {
+    ticTacToe(chance, 1);
+    cells[0] = chance;
+    chnchance();
+}
+function func3() {
+    ticTacToe(chance, 2);
+    cells[0] = chance;
+    chnchance();
+}
+function func4() {
+    ticTacToe(chance, 3);
+    cells[0] = chance;
+    chnchance();
+}
+function func5() {
+    ticTacToe(chance, 4);
+    cells[0] = chance;
+    chnchance();
+}
+function func6() {
+    ticTacToe(chance, 5);
+    cells[0] = chance;
+    chnchance();
+}
+function func7() {
+    ticTacToe(chance, 6);
+    cells[0] = chance;
+    chnchance();
+}
+function func8() {
+    ticTacToe(chance, 7);
+    cells[0] = chance;
+    chnchance();
+}
+function func9() {
+    ticTacToe(chance, 8);
+    cells[0] = chance;
+    chnchance();
 }
 btns.forEach((btn, i) => {
     btn.addEventListener('click', () => ticTacToe(btn, i));
