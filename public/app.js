@@ -21,7 +21,11 @@ const ticTacToe = (element, index) => {
     console.log(element);
     console.log(index);
     for(const cond of conditions) {
-        
+        const [a, b, c] = cond;
+        console.log("check for:" + cells[a]);
+        if(cells[a] && cells[a] == cells[b] && cells[a] == cells[c]) {
+            console.log(cells[a] + "wins");
+        }
     }
     
     /*
