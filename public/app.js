@@ -5,6 +5,7 @@ let result = document.querySelector('.result');
 let btns = document.querySelectorAll('.btn');
 let chance = "X";
 let i = 0;
+let f = 0;
 let conditions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -26,6 +27,7 @@ const ticTacToe = (element, index) => {
         //console.log("check for:" + cells[a] + cells[b] + cells[c]);
         if(cells[a] && cells[a] == cells[b] && cells[a] == cells[c]) {
             console.log(cells[a] + "wins");
+            f = 1;
         }
     }
     
@@ -75,50 +77,68 @@ function chnchance() {
     }
 }
 function func1() {
-    if(cells[0] == ""){
+    if(cells[0] == "") {
+        document.getElementById("btn1").className += "btndis";
         cells[0] = chance;
         ticTacToe(chance, 0);
         chnchance();
+    }
 }
 function func2() {
-    cells[1] = chance;
-    ticTacToe(chance, 1);
-    chnchance();
+    if(cells[1] == "") {
+        cells[1] = chance;
+        ticTacToe(chance, 1);
+        chnchance();
+    }
 }
 function func3() {
-    cells[2] = chance;
-    ticTacToe(chance, 2);
-    chnchance();
+    if(cells[2] == "") {
+        cells[2] = chance;
+        ticTacToe(chance, 2);
+        chnchance();
+    }
 }
 function func4() {
-    cells[3] = chance;
-    ticTacToe(chance, 3);
-    chnchance();
+    if(cells[3] == "") {
+        cells[3] = chance;
+        ticTacToe(chance, 3);
+        chnchance();
+    }
 }
 function func5() {
-    cells[4] = chance;
-    ticTacToe(chance, 4);
-    chnchance();
+    if(cells[4] == "") {
+        cells[4] = chance;
+        ticTacToe(chance, 4);
+        chnchance();
+    }
 }
 function func6() {
-    cells[5] = chance;
-    ticTacToe(chance, 5);
-    chnchance();
+    if(cells[5] == "") {
+        cells[5] = chance;
+        ticTacToe(chance, 5);
+        chnchance();
+    }
 }
 function func7() {
-    cells[6] = chance;
-    ticTacToe(chance, 6);
-    chnchance();
+    if(cells[6] == "") {
+        cells[6] = chance;
+        ticTacToe(chance, 6);
+        chnchance();
+    }
 }
 function func8() {
-    cells[7] = chance;
-    ticTacToe(chance, 7);
-    chnchance();
+    if(cells[7] == "") {
+        cells[7] = chance;
+        ticTacToe(chance, 7);
+        chnchance();
+    }
 }
 function func9() {
-    cells[8] = chance;
-    ticTacToe(chance, 8);
-    chnchance();
+    if(cells[8] == "") {
+        cells[8] = chance;
+        ticTacToe(chance, 8);
+        chnchance();
+    }
 }
 btns.forEach((btn, i) => {
     btn.addEventListener('click', () => ticTacToe(btn, i));
