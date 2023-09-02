@@ -13,7 +13,7 @@ body {
 h1 {
   text-align: center;
   color: white;
-  text-shadow: 2px;
+  text-shadow: 1px 1px 1.5px black;
   font-size: 50px;
 }
 .box{
@@ -60,7 +60,7 @@ h1 {
 }
 .result{
   color: black;
-  text-shadow: 5px black;
+  text-shadow: 1px 1px 1.5px black;
   font-size: 25px;
 }
 #reset{
@@ -68,6 +68,8 @@ h1 {
   background-color: rgb(224, 224, 224);
   color: black;
   transition-duration: 200ms;
+  text-align: center;
+  margin-top: 50px;
 }
 #reset:hover{
   background-color: black;
