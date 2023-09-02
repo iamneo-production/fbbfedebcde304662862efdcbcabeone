@@ -16,21 +16,17 @@ let conditions = [
     [0, 4, 8],
     [2, 4, 6]
 ];
-
-// Function to handle player moves
+document.getElementsByClassName(result).innerText = "Player" + chance + "turn";
 const ticTacToe = (element, index) => {
-    //console.log(element);
-    //console.log(index);
-    //console.log(cells);
     for(const cond of conditions) {
         const [a, b, c] = cond;
-        //console.log("check for:" + cells[a] + cells[b] + cells[c]);
         if(cells[a] && cells[a] == cells[b] && cells[a] == cells[c]) {
             console.log(cells[a] + "wins");
             f = 1;
         }
     }
     
+    document.getElementsByClassName(result).innerText = "Player" + chance + "turn";
     /*
     **Part 1: Winning Conditions (Add your code here)**
 
@@ -60,7 +56,7 @@ const ticTacToe = (element, index) => {
 
 // Function to reset the game
 const resetGame = () => {
-    console.log("sd");
+    console.log("asd");
     // Your code to reset the game state
     // ...
 
@@ -164,5 +160,4 @@ btns.forEach((btn, i) => {
     btn.addEventListener('click', () => ticTacToe(btn, i));
 });
 */
-document.getElementById("reset").innerText = "asdsad";
-//.addEventListener('click', resetGame());
+document.getElementById("reset").addEventListener('click', resetGame());
