@@ -2,20 +2,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Radio+Canada:wght@400;500;600;700&display=swap");
 
 body {
-    background-image: url("https://cdn.pixabay.com/photo/2018/03/17/19/36/connection-3234929_1280.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    font-family: "Radio Canada", sans-serif;
-  }
+  background-image: url("https://cdn.pixabay.com/photo/2018/03/17/19/36/connection-3234929_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-family: "Radio Canada", sans-serif;
+}
   
 /* Enter your styling here */
 h1 {
   text-align: center;
   color: white;
   text-shadow: 2px;
+  font-size: 50px;
 }
-
+.box{
+  display: flex;
+  margin: 35px;
+}
+.row{
+  display: flex;
+}
 
 
 .btn {
@@ -24,6 +31,7 @@ h1 {
   padding: 50px;
   background-color: rgb(185, 185, 185);
   transition-duration: 0.2s;
+
 }
 
 .btn:hover {
