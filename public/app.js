@@ -16,7 +16,7 @@ let conditions = [
     [0, 4, 8],
     [2, 4, 6]
 ];
-document.getElementsByClassName(result).innerText = "Player" + chance + "turn";
+
 const ticTacToe = (element, index) => {
     for(const cond of conditions) {
         const [a, b, c] = cond;
@@ -26,7 +26,7 @@ const ticTacToe = (element, index) => {
         }
     }
     
-    document.getElementsByClassName(result).innerText = "Player" + chance + "turn";
+    document.getElementById("result").innerText = "Player " + chance + " turn";
     /*
     **Part 1: Winning Conditions (Add your code here)**
 
