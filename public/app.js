@@ -3,6 +3,7 @@ let cells = ['', '', '', '', '', '', '', '', ''];
 let currentPlayer = 'X';
 let result = document.querySelector('.result');
 let btns = document.querySelectorAll('.btn');
+let chance = "X";
 let conditions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -16,6 +17,8 @@ let conditions = [
 
 // Function to handle player moves
 const ticTacToe = (element, index) => {
+    console.log(element);
+    console.log(index);
     // Your game logic here
 
     /*
@@ -56,7 +59,16 @@ const resetGame = () => {
     // Your code to re-enable buttons
     // ...
 };
-
+func
+function func1() {
+    ticTacToe(chance, 0);
+    cells[0] = chance;
+    if(chance == "X") {
+        chance = "O";
+    } else {
+        chance = "X";
+    }
+}
 btns.forEach((btn, i) => {
     btn.addEventListener('click', () => ticTacToe(btn, i));
 });
