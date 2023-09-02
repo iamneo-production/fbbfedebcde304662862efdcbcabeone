@@ -55,10 +55,17 @@ h1 {
   max-width: 200px;
   background-color: rgb(224, 224, 224);
   text-align: center;
-  marg
+  margin: auto;
+  border: 2px black solid;
 }
-
+.result{
+  color: black;
+  text-shadow: 2px;
+  font-size: 25px;
+}
 #reset{
-  width: 100%;
+  border: 2px black solid;
+  caret-color: black;
   background-color: rgb(224, 224, 224);
+
 }
