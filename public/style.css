@@ -60,12 +60,17 @@ h1 {
 }
 .result{
   color: black;
-  text-shadow: 2px;
+  text-shadow: 5px black;
   font-size: 25px;
 }
 #reset{
   border: 2px black solid;
-  caret-color: black;
   background-color: rgb(224, 224, 224);
-
+  color: black;
+  transition-duration: 200ms;
+}
+#reset:hover{
+  background-color: black;
+  color: white;
+  transition-duration: 200ms;
 }
