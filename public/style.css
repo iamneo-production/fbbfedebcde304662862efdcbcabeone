@@ -30,7 +30,7 @@ h1 {
 .btn {
   height: 75px;
   width: 75px;
-  background-color: rgb(185, 185, 185);
+  background-color: rgb(224, 224, 224);
   transition-duration: 0.2s;
   border: 2px black solid;
   border-radius: 5px;
@@ -43,7 +43,7 @@ h1 {
 
 .btn:hover {
   transition-duration: 0.2s;
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(255, 255, 255);
 }
 
 .btndis {
@@ -52,5 +52,7 @@ h1 {
 
 .result-container{
   max-width: 200px;
-  align
+  background-color: rgb(224, 224, 224 );
+  text-align: center;
+  
 }
