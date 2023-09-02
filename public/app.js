@@ -18,11 +18,12 @@ let conditions = [
 
 // Function to handle player moves
 const ticTacToe = (element, index) => {
-    console.log(element);
-    console.log(index);
+    //console.log(element);
+    //console.log(index);
+    //console.log(cells);
     for(const cond of conditions) {
         const [a, b, c] = cond;
-        console.log("check for:" + cells[a]);
+        //console.log("check for:" + cells[a] + cells[b] + cells[c]);
         if(cells[a] && cells[a] == cells[b] && cells[a] == cells[c]) {
             console.log(cells[a] + "wins");
         }
@@ -74,48 +75,49 @@ function chnchance() {
     }
 }
 function func1() {
-    ticTacToe(chance, 0);
-    cells[0] = chance;
-    chnchance();
+    if(cells[0] == ""){
+        cells[0] = chance;
+        ticTacToe(chance, 0);
+        chnchance();
 }
 function func2() {
+    cells[1] = chance;
     ticTacToe(chance, 1);
-    cells[0] = chance;
     chnchance();
 }
 function func3() {
+    cells[2] = chance;
     ticTacToe(chance, 2);
-    cells[0] = chance;
     chnchance();
 }
 function func4() {
+    cells[3] = chance;
     ticTacToe(chance, 3);
-    cells[0] = chance;
     chnchance();
 }
 function func5() {
+    cells[4] = chance;
     ticTacToe(chance, 4);
-    cells[0] = chance;
     chnchance();
 }
 function func6() {
+    cells[5] = chance;
     ticTacToe(chance, 5);
-    cells[0] = chance;
     chnchance();
 }
 function func7() {
+    cells[6] = chance;
     ticTacToe(chance, 6);
-    cells[0] = chance;
     chnchance();
 }
 function func8() {
+    cells[7] = chance;
     ticTacToe(chance, 7);
-    cells[0] = chance;
     chnchance();
 }
 function func9() {
+    cells[8] = chance;
     ticTacToe(chance, 8);
-    cells[0] = chance;
     chnchance();
 }
 btns.forEach((btn, i) => {
